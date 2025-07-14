@@ -85,18 +85,25 @@ h2{
 	color: #1D6154
 }
 nav ul {
-	display: flex;
-	align-items: center;
-	list-style-type: none;
-
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 }
+
 nav li {
-	padding: 0 10px;
-	font-size: 1.2em;
+    padding: 0 10px;
+    font-size: 1.2em;
 }
 
-li:hover {
-	color: #B1663C;
+nav li a {
+    text-decoration: none; 
+    color: #1D6154;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #B1663C;
+    font-weight: bold;
 }
 #introduction {
 	display: flex;
