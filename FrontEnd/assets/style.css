@@ -187,6 +187,20 @@ input[type="submit"]{
 	border-radius: 60px ;
 }
 
+        .forgot-password {
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+            color: #3D3D3D;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-password:hover {
+            color: #1D6154;
+            text-decoration: underline;
+        }
+
 footer nav ul {
 	display: flex;
 	justify-content: flex-end;
