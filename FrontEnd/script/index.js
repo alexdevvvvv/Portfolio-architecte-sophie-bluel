@@ -87,6 +87,24 @@ function createFilterButtons() {
     portfolioSection.insertBefore(filterContainer, title.nextSibling);
 }
 
+        // Fonction pour gérer l'état actif des boutons
+        function setActiveButton(clickedButton) {
+            // Retirer la classe active de tous les boutons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Ajouter la classe active au bouton cliqué
+            clickedButton.classList.add('active');
+        }
+
+        // Ajouter les écouteurs d'événements
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                setActiveButton(this);
+            });
+        })
+
 // Fonction pour filtrer les travaux
 function filterWorks(categoryId) {
     if (categoryId === null) {

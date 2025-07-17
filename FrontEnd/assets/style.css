@@ -144,6 +144,49 @@ nav li a:hover {
 	width: 100%;
 
 }
+
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Style de base pour les boutons */
+        .filter-btn {
+            font-family: 'Syne', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 9px 20px;
+            min-width: 100px;
+            border: 1px solid #1D6154;
+            border-radius: 60px;
+            background-color: transparent;
+            color: #1D6154;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        /* État hover */
+        .filter-btn:hover {
+            background-color: #1D6154;
+            color: white;
+            transform: scale(1.02);
+        }
+
+        /* État actif */
+        .filter-btn.active {
+            background-color: #1D6154;
+            color: white;
+        }
+
+        /* Animation au clic */
+        .filter-btn:active {
+            transform: scale(0.98);
+        }
+
 #contact {
 	width: 50%;
 margin: auto;
