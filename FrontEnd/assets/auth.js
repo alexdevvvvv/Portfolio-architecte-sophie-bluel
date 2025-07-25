@@ -13,6 +13,8 @@ function updateNavigation() {
     const loginListItem = loginLink ? loginLink.parentElement : document.querySelector('nav li:nth-child(3)');
     
     if (isLoggedIn()) {
+        document.body.classList.add('is-logged');
+        
         if (loginLink) {
             loginLink.textContent = 'logout';
             loginLink.href = '#';
@@ -24,6 +26,8 @@ function updateNavigation() {
             loginListItem.innerHTML = '<a href="#" onclick="logout()">logout</a>';
         }
     } else {
+        document.body.classList.remove('is-logged');
+        
         if (loginLink) {
             loginLink.textContent = 'login';
             loginLink.href = 'login.html';
