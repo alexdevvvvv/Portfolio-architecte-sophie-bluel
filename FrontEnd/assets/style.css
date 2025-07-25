@@ -151,10 +151,43 @@ nav a:hover {
 #introduction p {
 	margin-bottom: 0.5em;
 }
-#portfolio h2 {
-	text-align: center;
+.portfolio-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 31px;
 	margin-bottom: 1em;
 }
+
+#portfolio h2 {
+	margin: 0;
+}
+
+.edit-btn {
+	background: none;
+	border: none;
+	color: #000;
+	font-family: 'Work Sans';
+	font-size: 14px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 0;
+}
+
+.edit-btn:hover {
+	color: #B1663C;
+}
+
+.edit-btn i {
+	font-size: 16px;
+}
+
+body:not(.is-logged) .edit-btn {
+	display: none;
+}
+
 .gallery {
 	width: 100%;
 	display: grid;

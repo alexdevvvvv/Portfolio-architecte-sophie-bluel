@@ -87,8 +87,8 @@ function displayCategoryFilters(categories) {
         filtersContainer.appendChild(button);
     });
     
-    const title = portfolioSection.querySelector('h2');
-    portfolioSection.insertBefore(filtersContainer, title.nextSibling);
+    const portfolioHeader = portfolioSection.querySelector('.portfolio-header');
+    portfolioSection.insertBefore(filtersContainer, portfolioHeader.nextSibling);
 }
 
 async function initGallery() {
