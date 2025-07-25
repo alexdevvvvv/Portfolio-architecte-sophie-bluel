@@ -251,6 +251,18 @@ footer nav ul {
 	text-align: center;
 }
 
+.error-message {
+	color: #D65353;
+	background-color: #FADEDE;
+	border: 1px solid #D65353;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 14px;
+	display: none;
+}
+
 .category-filters {
 	display: flex;
 	justify-content: center;
